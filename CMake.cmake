@@ -24,6 +24,16 @@ target_link_libraries(scan
   ${Boost_LIBRARIES}
 )
 
+
+# getParam
+add_executable(getParam
+  src/getParam.cpp
+)
+target_link_libraries(getParam
+  crazyflie_cpp
+  ${Boost_LIBRARIES}
+)
+
 # listParams
 add_executable(listParams
   src/listParams.cpp
